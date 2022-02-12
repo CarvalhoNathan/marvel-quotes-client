@@ -15,7 +15,7 @@ beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
-test('transforms json response into object', async () => {
+test('transform json response into object', async () => {
   const quote = await getQuote();
 
   expect(quote).toStrictEqual(response);
